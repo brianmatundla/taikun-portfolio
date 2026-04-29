@@ -34,8 +34,8 @@
                     <span class="badge-text">🚀 Modern Tech Solutions</span>
                 </div>
                 <h1 class="hero-title">
-                    We Build <span class="gradient-text">Modern Websites</span><br>
-                    That Grow Your Business
+                    Build <span class="gradient-text">Future-Ready</span><br>
+                    Digital Experiences
                 </h1>
                 <p class="hero-description">
                     TAIKUN TECHNOLOGIES delivers cutting-edge websites, intelligent systems, 
@@ -52,15 +52,15 @@
                 <div class="hero-stats">
                     <div class="stat">
                         <span class="stat-number" id="projectCount">0</span>
-                        <span class="stat-label">Projects Built</span>
+                        <span class="stat-label">Projects Delivered</span>
                     </div>
                     <div class="stat">
-                        <span class="stat-number" id="backlinkCount">0</span>
-                        <span class="stat-label">Active Backlinks</span>
+                        <span class="stat-number">24/7</span>
+                        <span class="stat-label">AI Support</span>
                     </div>
                     <div class="stat">
                         <span class="stat-number">100%</span>
-                        <span class="stat-label">Satisfaction</span>
+                        <span class="stat-label">Client Satisfaction</span>
                     </div>
                 </div>
             </div>
@@ -93,18 +93,18 @@
                 <div class="service-card">
                     <div class="service-icon"><i class="fas fa-globe"></i></div>
                     <h3>Modern Websites</h3>
-                    <p>Responsive, fast, SEO-optimized websites built with React, Next.js, and modern frameworks.</p>
+                    <p>Responsive, fast, and SEO-optimized websites built with React, Next.js, and modern frameworks.</p>
                     <ul class="service-features">
-                        <li><i class="fas fa-check"></i> 100% responsive</li>
+                        <li><i class="fas fa-check"></i> 100% responsive design</li>
                         <li><i class="fas fa-check"></i> SEO optimized</li>
-                        <li><i class="fas fa-check"></i> Lightning fast</li>
+                        <li><i class="fas fa-check"></i> Lightning fast loading</li>
                         <li><i class="fas fa-check"></i> CMS integration</li>
                     </ul>
                 </div>
                 <div class="service-card">
                     <div class="service-icon"><i class="fas fa-server"></i></div>
                     <h3>Custom Systems</h3>
-                    <p>Tailored backend systems, databases, and business automation tools.</p>
+                    <p>Tailored backend systems, databases, and business automation tools for your unique needs.</p>
                     <ul class="service-features">
                         <li><i class="fas fa-check"></i> Custom databases</li>
                         <li><i class="fas fa-check"></i> API development</li>
@@ -113,10 +113,10 @@
                     </ul>
                 </div>
                 <div class="service-card featured">
-                    <div class="popular-badge">🔥 Popular</div>
+                    <div class="popular-badge">🔥 Most Popular</div>
                     <div class="service-icon"><i class="fas fa-chart-line"></i></div>
                     <h3>Social Media Management</h3>
-                    <p>Data-driven social strategies, content creation, and engagement.</p>
+                    <p>Grow your brand with data-driven social strategies, content creation, and engagement.</p>
                     <ul class="service-features">
                         <li><i class="fas fa-check"></i> Content calendar</li>
                         <li><i class="fas fa-check"></i> Analytics & reporting</li>
@@ -127,7 +127,7 @@
                 <div class="service-card">
                     <div class="service-icon"><i class="fas fa-microchip"></i></div>
                     <h3>AI Tech Solutions</h3>
-                    <p>Leverage AI for chatbots, automation, data analysis, and smart systems.</p>
+                    <p>Leverage artificial intelligence for chatbots, automation, data analysis, and smart systems.</p>
                     <ul class="service-features">
                         <li><i class="fas fa-check"></i> AI chatbots</li>
                         <li><i class="fas fa-check"></i> Process automation</li>
@@ -143,32 +143,10 @@
         <div class="container">
             <div class="section-header">
                 <span class="section-badge">Our Portfolio</span>
-                <h2 class="section-title">Websites <span class="gradient-text">Powered by TAIKUN</span></h2>
-                <p class="section-subtitle">Real projects from real clients. Each one links back to us.</p>
+                <h2 class="section-title">Recent <span class="gradient-text">Projects</span></h2>
+                <p class="section-subtitle">Showcasing excellence in every delivery</p>
             </div>
-            <div class="projects-grid" id="projectsGrid">
-                <!-- Projects load dynamically -->
-            </div>
-        </div>
-    </section>
-
-    <section class="badge-section">
-        <div class="container">
-            <div class="badge-card">
-                <h3><i class="fas fa-code"></i> Client Footer Badge</h3>
-                <p>Give this code to your clients to put in their website footer:</p>
-                <div class="badge-code-container">
-                    <code id="badgeCode">&lt;a href="https://taikuntechnologies.vercel.app" target="_blank"&gt;Powered by TAIKUN TECHNOLOGIES&lt;/a&gt;</code>
-                    <button class="copy-btn" onclick="copyBadgeCode()">
-                        <i class="fas fa-copy"></i> Copy Code
-                    </button>
-                </div>
-                <div class="badge-preview">
-                    <p>Preview:</p>
-                    <a href="#" id="badgePreview">Powered by TAIKUN TECHNOLOGIES</a>
-                </div>
-                <small>Every client who adds this creates a backlink to your portfolio!</small>
-            </div>
+            <div class="projects-grid" id="projectsGrid"></div>
         </div>
     </section>
 
@@ -176,27 +154,26 @@
         <div class="container">
             <div class="admin-toggle">
                 <button class="btn-secondary" onclick="toggleAdminPanel()">
-                    <i class="fas fa-lock"></i> Admin: Add New Client Project
+                    <i class="fas fa-lock"></i> Admin Dashboard
                 </button>
             </div>
             <div id="adminPanel" style="display: none;">
                 <div class="admin-card">
-                    <h3><i class="fas fa-plus-circle"></i> Add Client Website to Portfolio</h3>
+                    <h3><i class="fas fa-plus-circle"></i> Add New Project</h3>
                     <form id="addProjectForm">
-                        <input type="text" id="projectName" placeholder="Client/Business Name" required>
-                        <input type="url" id="projectUrl" placeholder="Client Website URL (https://client-site.com)" required>
+                        <input type="text" id="projectName" placeholder="Client Name" required>
+                        <input type="url" id="projectUrl" placeholder="Website URL" required>
                         <select id="projectType" required>
                             <option value="">Service Type</option>
                             <option value="website">Modern Website</option>
                             <option value="system">Custom System</option>
-                            <option value="social">Social Media Management</option>
+                            <option value="social">Social Media</option>
                             <option value="ai">AI Solution</option>
                         </select>
-                        <textarea id="projectDesc" placeholder="What did you build for them? (e.g., 'Full e-commerce website with payment integration')" rows="3"></textarea>
-                        <input type="password" id="adminPass" placeholder="Admin Password">
-                        <button type="submit" class="btn-primary">Add to Portfolio</button>
+                        <textarea id="projectDesc" placeholder="Project Description" rows="3" required></textarea>
+                        <input type="password" id="adminPass" placeholder="Admin Password" required>
+                        <button type="submit" class="btn-primary">Add Project</button>
                     </form>
-                    <small>Default password: taikun2024 (change in script.js)</small>
                 </div>
             </div>
         </div>
@@ -207,14 +184,13 @@
             <div class="section-header">
                 <span class="section-badge">Get In Touch</span>
                 <h2 class="section-title">Let's Build <span class="gradient-text">Something Great</span></h2>
-                <p class="section-subtitle">Ready to grow your business? Contact us today.</p>
+                <p class="section-subtitle">Ready to transform your business? Contact us today.</p>
             </div>
             <div class="contact-wrapper">
-                <!-- IMPORTANT: Replace YOUR_FORM_ID_HERE with your actual Formspree ID -->
-                <form class="contact-form" id="contactForm" action="https://formspree.io/f/xkokejrj" method="POST">
+                <form class="contact-form" id="contactForm" action="https://formspree.io/f/xqapwnvr" method="POST">
                     <input type="text" name="name" placeholder="Your Name" required>
                     <input type="email" name="email" placeholder="Your Email" required>
-                    <input type="tel" name="phone" placeholder="Your Phone Number">
+                    <input type="tel" name="phone" placeholder="Your Phone">
                     <select name="service" required>
                         <option value="">Select Service</option>
                         <option value="website">Modern Website</option>
@@ -231,14 +207,14 @@
                         <i class="fas fa-envelope"></i>
                         <div>
                             <h4>Email</h4>
-                            <p><a href="mailto:brianmatundla@gmail.com" style="color: #667eea;">brianmatundla@gmail.com</a></p>
+                            <p><a href="mailto:brianmatundla@gmail.com">brianmatundla@gmail.com</a></p>
                         </div>
                     </div>
                     <div class="info-item">
                         <i class="fas fa-phone"></i>
                         <div>
-                            <h4>Phone / WhatsApp</h4>
-                            <p><a href="tel:+254758570579" style="color: #667eea;">+254 758 570 579</a></p>
+                            <h4>Phone</h4>
+                            <p><a href="tel:+254758570579">+254 758 570 579</a></p>
                         </div>
                     </div>
                     <div class="info-item">
@@ -274,7 +250,6 @@
             </div>
             <div class="footer-bottom">
                 <p>&copy; 2024 TAIKUN TECHNOLOGIES. All rights reserved.</p>
-                <p class="powered-by-footer">⚡ <strong>TAIKUN TECHNOLOGIES</strong> - Building modern web solutions</p>
             </div>
         </div>
     </footer>
@@ -286,7 +261,7 @@
                 <button class="close-chat" onclick="closeAIChat()">&times;</button>
             </div>
             <div class="chat-messages" id="chatMessages">
-                <div class="message ai-message">Hi! I'm TAIKUN's AI assistant. Ask me about our services or pricing!</div>
+                <div class="message ai-message">Hi! I'm TAIKUN's AI assistant. How can I help you today?</div>
             </div>
             <div class="chat-input-container">
                 <input type="text" id="chatInput" placeholder="Ask me anything..." class="chat-input">
